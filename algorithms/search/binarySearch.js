@@ -10,7 +10,11 @@ function binarySearch(array, target) {
       return mid;
     }
 
+<<<<<<< HEAD
     if (value < target) {
+=======
+    if (!value >= target) {
+>>>>>>> manhnd111
       left = mid + 1;
     } else {
       right = mid - 1;
