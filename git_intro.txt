@@ -1,0 +1,65 @@
+Ôn tập:
+B1: download git
+B2: set vscode làm editor của git: git config --global core.editor "code --wait"
+B3: config name vs email
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+git config --global --list 
+B4: git init 
+
+-------------------------------------------
+Thao tác với remotes
+git remote add origin https://github.com/username/repo.git
+git push -u origin main
+git push --all origin
+git pull origin <branchname> = git fetch + git merge
+
+
+git log
+git log --oneline 
+
+-------------------------------------------
+Nhóm command liên quan đến branch:
+\*note: khi đang ở branch a -> git branch b -> branch b sẽ cop nguyên code của branch a
+
+git branch <brandname> -> create branch
+git branch -> display all branches
+git switch <branchname> 
+git checkout -b <branchName> = git branch + git checkout
+git merge <branchname> (local)
+
+Đổi tên branch
+git branch -m master main
+
+Xóa nhánh
+git branch -d branch-name -> local
+git push origin --delete branch-name -> remote
+
+--------------------------------------
+Yêu cầu mỗi nhóm luyện tập
+
+create folder
+git init
+create file -> git add -> git commit
+create branch 
+rename master -> main
+merge branch to main
+checkout to older version 
+conflict
+ 
+remote
+add -> commit  -> push
+merge: pull origin -> push
+conflict
+
+---------------------------------------
+Kết quả cần đạt được: 
+	mỗi nhóm có 1 repo trên github/gitlab
+	mỗi thành viên sẽ là 1 branch riêng
+	mỗi thành viên đều cần có commit, xử lý merge branch và xử lý conflict 
+Note: 
+	repo không giới hạn ngôn ngữ và nội dung (javascript, java, .net,...)
+	paste lại link repo vào file chia nhóm
+
+
+
